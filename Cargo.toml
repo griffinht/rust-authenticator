@@ -1,8 +1,25 @@
 [package]
 name = "rust-authenticator"
 version = "0.1.0"
+authors = ["stzups"]
+license = "Unlicense"
+description = "general purpose authentication"
+readme = "README.md"
+homepage = "https://github.com/stzups/rust-authenticator"
+repository = "https://github.com/stzups/rust-authenticator"
+keywords = ["server", "http", "authentication"]
+categories = ["authentication"]
 edition = "2021"
+include = [
+    "Cargo.toml",
+    "src",
+    "README.md"
+]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "rust-authenticator"
+path = "src/main.rs"
 
 [dependencies]
+actix-web = "3"
+getopts = "0.2"
