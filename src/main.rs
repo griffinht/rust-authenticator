@@ -1,5 +1,6 @@
 mod options;
 mod response;
+mod api;
 
 #[macro_export]
 macro_rules! default_bind_address {
